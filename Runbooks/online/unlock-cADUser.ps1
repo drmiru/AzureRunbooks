@@ -7,7 +7,7 @@ workflow unlock-cADUser
 	
 	Import-Module ActiveDirectory
 	
-	$aduserobj = get-ADUser $UserLoginName
+	$aduserobj = get-ADUser $UserLoginName -Properties *
 	
 	Write-Output $aduserobj
 	
